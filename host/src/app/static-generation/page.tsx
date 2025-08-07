@@ -1,16 +1,3 @@
-/**
- * Página de Demonstração - Static Generation (SSG)
- * Esta página demonstra a geração estática do Next.js, onde o conteúdo
- * é gerado no momento do build e servido como HTML estático.
- * 
- * Características do SSG:
- * - Conteúdo gerado em build time
- * - Máxima performance de carregamento
- * - Ideal para conteúdo que não muda frequentemente
- * - CDN-friendly e cache otimizado
- */
-
-// Força a geração estática desta página
 export const dynamic = 'force-static';
 
 export default function StaticGenerationPage() {

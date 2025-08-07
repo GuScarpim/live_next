@@ -1,15 +1,3 @@
-/**
- * Página de Demonstração - Image Optimization
- * Esta página demonstra as capacidades de otimização automática de imagens
- * do Next.js através do componente Image.
- * 
- * Funcionalidades demonstradas:
- * - Comparação entre imagem otimizada (Next.js Image) vs não otimizada (HTML img)
- * - Lazy loading automático
- * - Redimensionamento responsivo
- * - Formatos modernos (WebP, AVIF) quando suportados
- * - Priorização de imagem com priority prop
- */
 import Image from 'next/image';
 
 export default function ImageOptimizationPage() {

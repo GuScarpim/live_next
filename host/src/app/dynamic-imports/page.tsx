@@ -1,15 +1,4 @@
 
-/**
- * Página de Demonstração - Dynamic Imports
- * Esta página demonstra o uso de importações dinâmicas no Next.js para otimização
- * de performance através de code splitting automático.
- * 
- * Conceitos demonstrados:
- * - Lazy loading de componentes com next/dynamic
- * - Code splitting automático
- * - Redução do bundle inicial
- * - Loading states para componentes dinâmicos
- */
 import DynamicWrapper from '@/components/DynamicWrapper';
 
 export default function DynamicImportsPage() {

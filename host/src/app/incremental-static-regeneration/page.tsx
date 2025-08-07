@@ -1,17 +1,4 @@
 
-/**
- * Página de Demonstração - Incremental Static Regeneration (ISR)
- * Esta página demonstra o ISR do Next.js, que permite atualizar páginas estáticas
- * sem rebuild completo da aplicação.
- * 
- * Funcionalidades:
- * - Geração estática com revalidação automática
- * - Cache inteligente com tempo de vida configurável
- * - Dados sempre atualizados sem perda de performance
- * - Revalidação a cada 10 segundos (configurável via next.revalidate)
- */
-
-// Função que busca dados externos com revalidação automática
 async function getISRData() {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts/2', {
     next: { revalidate: 10 } // Revalida a cada 10 segundos

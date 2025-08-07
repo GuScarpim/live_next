@@ -1,14 +1,3 @@
-/**
- * Componente de Navegação Principal
- * Este componente renderiza a barra de navegação superior da aplicação host,
- * fornecendo links para todas as páginas demonstrativas e para o MFE.
- * 
- * Funcionalidades:
- * - Navegação responsiva com indicação da página ativa
- * - Links para todas as demonstrações do Next.js
- * - Integração com Micro Frontend (MFE App)
- * - Indicador visual para links externos
- */
 'use client';
 
 import Link from 'next/link';
@@ -17,7 +6,6 @@ import { usePathname } from 'next/navigation';
 export default function Navigation() {
   const pathname = usePathname();
 
-  // Configuração dos itens de navegação
   const navItems = [
     { href: '/', label: 'Home (Host)', isExternal: false },
     { href: '/about', label: 'Sobre (Host)', isExternal: false },
@@ -28,7 +16,7 @@ export default function Navigation() {
     { href: '/image-optimization', label: 'Image Optimization', isExternal: false },
     { href: '/dynamic-imports', label: 'Dynamic Imports', isExternal: false },
     { href: '/api-test', label: 'Teste API', isExternal: false },
-    { href: '/mfe', label: 'MFE App', isExternal: true }, // Link para Micro Frontend
+    { href: '/mfe', label: 'MFE App', isExternal: true },
   ];
 
   return (

@@ -1,14 +1,5 @@
-/**
- * Página de Demonstração - File-based Routing
- * Esta página exemplifica o sistema de roteamento baseado em arquivos do Next.js,
- * onde a estrutura de pastas determina automaticamente as rotas da aplicação.
- * 
- * Conceitos demonstrados:
- * - Roteamento automático baseado na estrutura de arquivos
- * - Navegação entre páginas com Next.js Link
- * - Organização de rotas através de diretórios
- */
 import Link from 'next/link';
+
 
 export default function FileBasedRoutingPage() {
   return (

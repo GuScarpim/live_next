@@ -1,16 +1,3 @@
-/**
- * Feature de Login
- * Este componente implementa toda a funcionalidade de autenticação da aplicação,
- * incluindo formulário, validação e integração com APIs.
- * 
- * Funcionalidades:
- * - Formulário de login com validação React Hook Form
- * - Integração com sistema de themes
- * - Suporte completo à internacionalização
- * - Estados de loading durante autenticação
- * - Validação de formulário com Zod schemas
- * - Checkbox "Lembrar-me" para persistência de sessão
- */
 'use client';
 
 import { Button } from '@/components/ui/button';

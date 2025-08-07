@@ -1,14 +1,3 @@
-/**
- * Página "Sobre o Projeto"
- * Esta página fornece informações detalhadas sobre a arquitetura de Micro Frontends
- * implementada neste projeto.
- * 
- * Conteúdo:
- * - Explicação da arquitetura MFE
- * - Tecnologias utilizadas no projeto
- * - Benefícios da implementação de Micro Frontends
- * - Stack tecnológico (Next.js 15, React 19, TypeScript, Tailwind CSS)
- */
 export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

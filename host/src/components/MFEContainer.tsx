@@ -1,32 +1,19 @@
-/**
- * Container para Micro Frontend (MFE)
- * Este componente é responsável por integrar micro frontends externos
- * na aplicação host através de iframes seguros.
- * 
- * Funcionalidades:
- * - Carregamento seguro de MFEs via iframe com sandbox
- * - Comunicação entre host e MFE através de postMessage
- * - Título customizável para identificação do MFE
- * - Configurações de segurança para isolamento adequado
- */
 'use client';
 
 import { useEffect, useRef } from 'react';
 
 interface MFEContainerProps {
-  src: string;        // URL do micro frontend
-  title?: string;     // Título opcional para exibição
+  src: string;
+  title?: string;
 }
 
 export default function MFEContainer({ src, title }: MFEContainerProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  // Configuração da comunicação com o MFE via postMessage
   useEffect(() => {
     const iframe = iframeRef.current;
     if (iframe) {
       const handleMessage = (event: MessageEvent) => {
-        // Aqui podem ser implementadas as regras de comunicação com o MFE
         console.log('Message from MFE:', event.data);
       };
 

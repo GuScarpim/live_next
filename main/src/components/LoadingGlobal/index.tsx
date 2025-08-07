@@ -1,14 +1,3 @@
-/**
- * Componente de Loading Global
- * Este componente exibe um overlay de carregamento controlado por um store global,
- * permitindo mostrar loading em qualquer parte da aplicação.
- * 
- * Funcionalidades:
- * - Overlay de tela completa com backdrop
- * - Controle via Zustand store global
- * - Spinner animado centralizado
- * - Renderização condicional baseada no estado de loading
- */
 'use client';
 
 import { useLoadingGlobalStore } from '@/core/store/loading-global.store';

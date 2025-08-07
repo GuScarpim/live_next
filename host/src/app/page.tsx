@@ -1,13 +1,3 @@
-/**
- * Página inicial do Host Application
- * Esta é a página principal da aplicação host que demonstra diferentes funcionalidades
- * do Next.js e gerencia múltiplos micro frontends (MFE).
- * 
- * Funcionalidades apresentadas:
- * - Overview da arquitetura de Micro Frontends
- * - Lista das funcionalidades implementadas no host
- * - Links para páginas que demonstram diferentes estratégias de renderização
- */
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

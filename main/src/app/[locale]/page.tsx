@@ -1,15 +1,3 @@
-/**
- * Página Principal do Micro Frontend (MFE)
- * Esta é a página inicial do micro frontend que demonstra funcionalidades
- * avançadas como internacionalização, themes dinâmicos e autenticação.
- * 
- * Funcionalidades:
- * - Internacionalização com next-intl (suporte a PT, EN, ES)
- * - Sistema de themes (claro/escuro) com Zustand
- * - Logout com integração de API
- * - Seletor de idioma dinâmico
- * - Roteamento baseado em locale
- */
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
@@ -22,20 +10,19 @@ export default function Home() {
   const pathname = usePathname();
   const currentLocale = useLocale();
 
-  // Função para alternar idioma da aplicação
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
     const segments = pathname.split('/');
-    segments[1] = newLocale; // Substitui o locale na URL
+    segments[1] = newLocale;
     const newPath = segments.join('/');
     router.push(newPath);
   };
 
-  // Função para realizar logout do usuário
   const handleLogout = async () => {
     try {
-      await fetch('/api/logout'); // Chama API de logout
-      router.push('/login'); // Redireciona para página de login
+      await fetch('/api/logout');
+
+      router.push('/login');
     } catch (error) {
       console.error('Erro ao fazer logout:', error);
     }

@@ -1,18 +1,6 @@
-/**
- * Página de Teste de API - Comparação SSR vs ISR
- * Esta página demonstra na prática a diferença entre Server-Side Rendering (SSR)
- * e Incremental Static Regeneration (ISR) no Next.js 15.
- * 
- * Funcionalidades:
- * - Fetch de dados com estratégia SSR (sem cache)
- * - Fetch de dados com estratégia ISR (com revalidação)
- * - Comparação visual dos resultados
- * - Demonstração de performance entre as duas abordagens
- */
-
 const API_URL = "http://localhost:3000";
 
-// Função para buscar dados usando SSR (sem cache)
+
 async function fetchSSRData() {
   const res = await fetch(`${API_URL}/api/data`, {
     cache: 'no-store',
@@ -21,7 +9,6 @@ async function fetchSSRData() {
 }
 
 
-// Função para buscar dados usando ISR (com revalidação automática)
 async function fetchISRData() {
   const res = await fetch(`${API_URL}/api/data`, {
     method: 'POST',

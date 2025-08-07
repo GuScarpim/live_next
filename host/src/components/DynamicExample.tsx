@@ -1,14 +1,3 @@
-/**
- * Componente de Exemplo Dinâmico
- * Este componente demonstra um componente que é carregado dinamicamente,
- * ilustrando as vantagens do code splitting e lazy loading.
- * 
- * Funcionalidades:
- * - Estado local com contador interativo
- * - Simulação de carregamento para demonstrar loading states
- * - Exemplo prático de componente que pode ser carregado sob demanda
- * - Demonstração de hydration em componentes client-side
- */
 'use client';
 
 import { useState, useEffect } from 'react';

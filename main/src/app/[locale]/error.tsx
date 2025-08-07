@@ -1,15 +1,3 @@
-/**
- * Página de Erro Global
- * Este componente é renderizado automaticamente quando ocorre um erro
- * não tratado em qualquer parte da aplicação.
- * 
- * Funcionalidades:
- * - Captura e exibe erros não tratados
- * - Opção de tentar novamente (reset)
- * - Link para voltar à página inicial
- * - Log automático de erros para debugging
- * - Interface amigável para o usuário
- */
 "use client";
 
 import { useEffect } from "react";
@@ -19,8 +7,8 @@ export default function Error({
   error,
   reset,
 }: {
-  error: Error & { digest?: string; }; // Erro capturado pelo boundary
-  reset: () => void; // Função para tentar recarregar o componente
+  error: Error & { digest?: string; };
+  reset: () => void;
 }) {
   useEffect(() => {
     console.error(error);

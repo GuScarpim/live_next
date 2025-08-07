@@ -1,17 +1,4 @@
 
-/**
- * Página de Demonstração - Server-Side Rendering (SSR)
- * Esta página demonstra o SSR do Next.js, onde os dados são buscados
- * no servidor a cada requisição, garantindo sempre dados atualizados.
- * 
- * Características do SSR:
- * - Dados sempre atualizados (sem cache)
- * - Renderização no servidor a cada request
- * - SEO otimizado com conteúdo pré-renderizado
- * - Maior tempo de resposta inicial comparado ao SSG/ISR
- */
-
-// Função que busca dados no servidor a cada requisição (sem cache)
 async function getServerData() {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
     cache: 'no-store'
