@@ -1,0 +1,11 @@
+{
+  "title": "Iniciar sesión",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "rememberMe": "Recordarme",
+  "submit": "Ingresar",
+  "success": "¡Inicio de sesión exitoso!",
+  "credentialsError": "Error al iniciar sesión. Verifica tus credenciales.",
+  "unexpectedError": "Error inesperado. Inténtalo de nuevo más tarde.",
+  "hello": "Hola Mundo"
+}

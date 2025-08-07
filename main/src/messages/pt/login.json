@@ -1,0 +1,11 @@
+{
+  "title": "Login",
+  "email": "E-mail",
+  "password": "Senha",
+  "rememberMe": "Lembrar-me",
+  "submit": "Entrar",
+  "success": "Login realizado com sucesso!",
+  "credentialsError": "Erro ao fazer login. Verifique suas credenciais.",
+  "unexpectedError": "Erro inesperado. Tente novamente mais tarde.",
+  "hello": "Olá Mundo"
+}

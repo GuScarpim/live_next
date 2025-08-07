@@ -1,0 +1,8 @@
+{
+  "notFoundTitle": "No encontrado",
+  "notFoundDescription": "La página que buscas no existe.",
+  "goBack": "Volver a la lista",
+  "unexpectedError": "Ocurrió un error inesperado.",
+  "tryAgain": "Intentar de nuevo",
+  "error": "¡Algo salió mal!"
+}

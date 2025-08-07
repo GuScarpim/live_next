@@ -1,0 +1,11 @@
+{
+  "title": "Login",
+  "email": "Email",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "submit": "Sign in",
+  "success": "Login successful!",
+  "credentialsError": "Login failed. Please check your credentials.",
+  "unexpectedError": "Unexpected error. Please try again later.",
+  "hello": "Hello World"
+}
