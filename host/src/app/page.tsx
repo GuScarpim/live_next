@@ -82,7 +82,7 @@ export default function Home() {
             FIAP
           </h3>
           <p className="text-blue-800">
-            Live 4FRTN - Prof. Gustavo Scarpim
+            Live 6FRTN - Prof. Gustavo Scarpim
           </p>
         </div>
       </div>
